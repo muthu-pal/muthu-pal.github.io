@@ -203,19 +203,20 @@ section#funstuff {
 }
 
 
-.card, .card-projects h3{
+.card h3{
     font-family: 'Overpass Bold';    
     font-size: 2rem;
 }
 
-.card, .card-projects h5{
+.card h5{
     font-family: 'Overpass Bold';    
     font-size: 1.3rem;
     font-style: italic;
 }
 
-.card, .card-projects p {
+.card p {
     font-size: 1.2rem;
+    font-style: normal;
 }
 
 .cards-projects{
@@ -246,7 +247,21 @@ section#funstuff {
 .card-projects:hover{
     transform: translateY(-0.5rem);
 }
+.card-projects h3{
+    font-family: 'Overpass Bold';    
+    font-size: 2rem;
+}
 
+.card-projects h5{
+    font-family: 'Overpass Bold';    
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.card-projects p {
+    font-size: 1.2rem;
+    font-style: normal;
+}
 
 
 .img-contact{
