@@ -301,6 +301,11 @@ footer {
     *{
         font-size: 80%;
     }
+    body{ 
+        overflow-x:hidden;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
     footer {
         width: 100%;
         height: auto;
@@ -334,6 +339,16 @@ footer {
     
     *{
         font-size: 80%;
+        
+    }
+    body{ 
+        overflow-x:hidden;
+        margin-right: 0px;
+        padding-right: 0px;
+     }
+
+    section{
+        width: 100%;
     }
     footer {
         width: 100%;
