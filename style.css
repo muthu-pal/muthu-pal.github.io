@@ -141,12 +141,20 @@ section#funstuff {
 
 
 .skills{
+    display: grid;
     text-align: center;
-    justify-content: center;
     font-weight: 900;
-    
-    
 }
+.skills h5{
+    font-family: "Overpass Bold";
+}
+/* #skillsRow{
+    display: grid;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+} */
+
 
 .img-skills{
     width: 100%;
@@ -330,13 +338,20 @@ footer {
         width: 70%;
         height: auto;
     }
+    .skills{
+        text-align: center;
+        justify-content: center;
+        font-weight: 900;
+        
+        
+    }
 }
 
 
 
 
-@media screen and (max-width: 480px) { /* mobile */ 
-    
+@media screen and (max-width: 480px) { /* mobile */
+     
     *{
         font-size: 80%;
         
@@ -376,7 +391,7 @@ footer {
     }
     
 
-}
+}  
 
 
   
