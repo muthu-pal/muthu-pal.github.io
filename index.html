@@ -1,341 +1,206 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />     
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
 
-    <title>MP</title>
-  </head>
-  <body>
-      <div class="container-fluid">
+  <title>MP</title>
+</head>
+<body>
+  <div class="container-fluid">
       
-            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-                    <a class="navbar-brand" href="#landing">Muthu Palaniappan</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                        <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#funstuff">fun stuff</a>
-                        </li>
-                    </ul>
-                    </div>
-                </nav>
+    <div class="navbar sticky" id="myNav">
+      <a href="#landing">Muthu Palaniappan</a> <!-- class="active" -->
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#funstuff">fun stuff</a>
+      <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
 
+    <div class="content">
+      <section id="landing">
+        <h1>hello!</h1>
+        <h3>I'm Muthu.</h3>
+      </section>
 
-
-          
-            <section id="landing" class="container-fluid">
-                <br>
-                <br>
-                <br>
-                <h1>hello!</h1>
-                <h3>I'm Muthu.</h3>
-            </section>
-
-            <section id="about">
-                <br>
-                <br>
-                <br>
-                <h1>about me</h1>
-                <img class="profilepic" src=./assets/profile_pic.png>
-                <br>
-                <p>Hi, I'm Muthu Palaniappan. I'm currently a sophomore at UCLA studying 
-                    Computer Science. I'm a developer and designer. 
-                </p>
-                <br>
-                <p>I use technology in every aspect of my life, from taking lecture notes on my tablet, to ordering iced coffee on the Philz app, 
-                    and to checking my blood glucose levels on my phone. Seeing how big a role technology has played in my life, my goal is to create products
-                    that stimulate productivity and simplify everyday life. 
-                </p>
-                <br>
-                <p>Here are the technologies I work with: </p>
-                <div class="container-fluid">
-                    <div class="skills">
-                            <div class="row" id="skillsRow">
-                                    <div class="column">
-                                        <h5>Dev:</h5>
-                                    </div>
-                            </div>
-                            <div class="row">
-                                <div class="column">
-                                        <a href="http://www.cplusplus.com/" target=”_blank”><img class="img-skills" src=./assets/cplusplus.png></a>
-                                        <a href="https://reactjs.org/" target=”_blank”><img class="img-skills" src=./assets/react.png ></a>
-                                        <a href="https://www.javascript.com/" target=”_blank”><img class="img-skills" src=./assets/js.png ></a>
-                                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target=”_blank”><img class="img-skills" src=./assets/html.png ></a>
-                                        <a href="https://www.python.org/" target=”_blank”><img class="img-skills" src=./assets/python.png ></a>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="column">
-                                    <h5>Design:</h5>
-                                </div>
-                                </div>
-                                <div class="row">
-                                    <div class="column">
-                                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target=”_blank”><img class="img-skills" src=./assets/css.png ></a>
-                                        <a href="https://www.figma.com/" target=”_blank”><img class="img-skills" src=./assets/figma.png ></a>
-                                        <a href="https://www.adobe.com/products/photoshop.html" target=”_blank”><img class="img-skills" src=./assets/photoshop.png ></a>
-                                        <a href="https://www.adobe.com/products/indesign.html" target=”_blank”><img class="img-skills" src=./assets/indesign.png ></a>
-                                        
-                                        
-                                    </div>
-                            </div> 
-                            <p><br></p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="experience">
-                <br>
-                <br>
-                <h1>experience</h1>
-                <br>
-                <div class="container-fluid" id="expContainer">
-                        <div class="cards">
-                                <div class = "card">
-                                <div class="row">
-                                    <div class=col-sm-2 id="photoDiv">
-                                    <img src='./assets/logo-design.png'>
-                                    </div>
-                                    <div class=column>
-                                    <h3 id="cardBodyTitle mb-0 pb-0">ACM Design</h3>
-                                    <h5>Workshops Director & Developer</h5>
-                                    <p class="cardBody mb-0 pb-0"><a href="https://www.uclaacm.com/" target=”_blank”>UCLA ACM</a>, or the Association for Computing Machinery, is the biggest 
-                                        Computer Science club at UCLA. ACM Design is in charge of mainting the branding for the club, and we also
-                                        teach students principles of design. As the Workshops Director, I organize workshops such as "How to
-                                        Design a Resume" and "Creating a Brand through Design". As a Developer, I help maintain the ACM Design
-                                        <a href="https://design.uclaacm.com/" target=”_blank”>styleguide website</a>. I've been with ACM Design since December
-                                        of 2019.   
-                                    </p>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class = "card">
-                                    <div class="row">
-                                        <div class=col-sm-2 id="photoDiv">
-                                        <img src='./assets/logo192.png'>
-                                        </div>
-                                        <div class=column>
-                                        <h3 id="cardBodyTitle mb-0 pb-0">Covalent</h3>
-                                        <h5>Frontend Developer & Designer</h5>
-                                        <p class="cardBody mb-0 pb-0"><a href="https://covalent.app/" target=”_blank”>Covalent</a> is a 
-                                            <a href="https://ucladevx.com/" target=”_blank”>UCLA DevX</a> project. We are creating a better way to bond! With games like 2 truths
-                                             and a lie, teams can get to know each other in a virtual setting. Check us out on <a href="https://twitter.com/covalentapp" target=”_blank”>Twitter</a> and on 
-                                             <a href="https://www.instagram.com/covalentapp/" target=”_blank”>Instagram</a> <b>@covalentapp</b>!   
-                                        </p>
-                                        </div>
-                                    </div>
-                                    </div>
-                                <div class = "card">
-                                        <div class="row">
-                                            <div class=col-sm-2 id="photoDiv">
-                                            <img src='./assets/girls-who-code.png'>
-                                            </div>
-                                            <div class=column>
-                                            <h3 id="cardBodyTitle mb-0 pb-0">Girls Who Code</h3>
-                                            <h5>Summer Immersion Student</h5>
-                                            <p class="cardBody mb-0 pb-0">In 2018, I took part in the <a href="https://girlswhocode.com/programs/summer-immersion-program" target=”_blank”>Girls Who Code Summer Immersion Program</a>.
-                                                My program was hosted at Lightspeed Ventures in Palo Alto, CA. I was able to learn about programming
-                                                and Robotics, covering topics such as Python and Web Development every week. Along with my classmates, I also 
-                                                learned about WiSTEM through visiting companies in the Bay Area and listening to 
-                                                women speak about their experiences in tech. 
-                                            </p>
-                                            </div>
-                                        </div>
-                                </div>
-                                <!-- <div class = "card">
-                                        <div class="row">
-                                            #hello
-                                            <div class=col-sm-2 id="photoDiv">
-                                            <img src='./assets/logo-design.png'>
-                                            </div>
-                                            <div class=column>
-                                            <h3 id="cardBodyTitle mb-0 pb-0"> ACM Design</h3>
-                                            <p class="cardBody mb-0 pb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                            </div>
-                                        </div>
-                                </div> -->
-
-                        </div>
-                </div>
-            </section>
-
-            <section id="projects">  
-                <br>
-                <br>
-                <h1>projects</h1>
-                <br>
-                <div class="container-fluid" id="expContainer">
-                        <div class="cards-projects">
-                                <div class = "card-projects">
-                                        <div class="row">
-                                                <div class=column>
-                                                <h3 id="cardBodyTitle mb-0 pb-0">nourish</h3>
-                                                <p class="cardBody mb-0 pb-0">nourish is a group project I worked on in Computer Science 97. nourish is a 
-                                                    full stack web app built with the MERN stack. The site serves as a "community craigslist" where users can create
-                                                    accounts and post about extra produce and supplies they are looking to donate to members of their 
-                                                    community. In a pandemic, it is important to be there for others, and nourish acts as a middle ground
-                                                    between those in need and those looking to help. Check out the source code and learn more <a href="https://github.com/muthu-pal/Nourish-CS97" target=”_blank”>here</a>!
-                                                </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                <div class = "card-projects">
-                                <div class="row">
-                                        <div class=column>
-                                        <h3 id="cardBodyTitle mb-0 pb-0">Moodie</h3>
-                                        <p class="cardBody mb-0 pb-0">Moodie is a song mood analyzer. Using React.js and the Spotify Developer
-                                            API, I created a web application that analyzes a user's top songs according to a certain time period 
-                                            (30 days, 6 months, or all time) and sorts the songs based on their mood. The application inspects
-                                            values provided by Spotify such as "danceability" or "tempo" and categorizes the song into its 
-                                            respective mood. View the source code <a href="https://github.com/muthu-pal/Moodie" target=”_blank”>here</a> 
-                                            or try Moodie for yourself <a href="http://moodie-s20.herokuapp.com/" target=”_blank”>here</a>!
-                                        </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class = "card-projects">
-                                        <div class="row">
-                                                <div class=column>
-                                                <h3 id="cardBodyTitle mb-0 pb-0">Schedule Buddy</h3>
-                                                <p class="cardBody mb-0 pb-0">As a part of Bruin Labs over the summer of 2020, I created Schedule Buddy in a team of four.
-                                                    Schedule Buddy is a prototype for UCLA students to upload their schedules, view other student's schedules, search class combinations,
-                                                    and access lists of "Interesting GEs" or "Easy GEs". With the schedules all in one place, students can see recommendations for 
-                                                    which classes to take during specific quarters. We used React.js to build the app, Firebase to host, and Beautiful Soup to parse
-                                                    class data for the search functions. View the source code <a href="https://github.com/muthu-pal/schedule-buddy" target=”_blank”>here</a>!
-                                                </p>
-                                                </div>
-                                            </div>
-                                </div>
-                                <div class = "card-projects">
-                                    <div class="row">
-                                            <div class=column>
-                                            <h3 id="cardBodyTitle mb-0 pb-0">Mini Rogue</h3>
-                                            <p class="cardBody mb-0 pb-0">
-                                                Mini Rogue is a game developed with C++. Users can battle monsters and try to find their way through a 2D dungeon
-                                                maze while collecting powerups and maintaining their health scores. There are 4 randomly generated levels in each game, 
-                                                and monsters and powerups regenerate at every level. View the source 
-                                                code <a href="https://github.com/muthu-pal/MiniRogue" target=”_blank”>here</a>!
-                                                
-                                            </p>
-                                            </div>
-                                        </div>
-                                </div>
-                            
-                                
-                                
-
-                        </div>
-                </div>
-            </section>
-            
-            
-            <section id="contact">
-                <br>
-                <br>
-                <h1>contact</h1>
-                <br>
-                <br>
-                <h2><a href="https://www.linkedin.com/in/muthu-p/" target=”_blank”><img class="img-contact" src=./assets/linkedin.png ></a></h2>
-                <br>
-                <h2><a href="https://github.com/muthu-pal" target=”_blank”><img class="img-contact" src=./assets/github.png ></a></h2>
-                <br>
-                <h2><a href = mailto:muthupal@g.ucla.edu target=”_blank”>
-                         <img class="img-contact" src=./assets/mail.png></a> <h4>muthupal [@] g.ucla [.] edu</h4></h2>
-                <br>
-                <br>
-            </section>
-            
-
-            <section id="funstuff">
-                <br>
-                <br>
-                <h1>fun stuff</h1>
-                <p>In my free time I love to visit coffee shops, listen to <a href="https://open.spotify.com/user/muthupal01?si=qWoK5-OiTjGB7yShcTP6Fw" target=”_blank”>music</a>, take <a href="https://www.flickr.com/photos/muthup" target=”_blank”>photographs</a>, and play tennis!</p>
-                <!-- <p>This is some of my favorite music:</p>
-                <div class="music">
-                        <div class="row">
-                            <div class="column">
-                                    <a href="https://open.spotify.com/album/6EgJXcGqaUvgZIF9bqPXfP?si=XhJ0u9LHQnGY0YolqYB0ig" target=”_blank”><img class="img-music" src=./assets/funstuff/lauv.jpg></a>
-                                    <a href="https://open.spotify.com/album/0fwZXPXf41aF6H0CN3UtXV?si=VahNNhwnSuOF1kavKgVutQ" target=”_blank”><img class="img-music" src=./assets/funstuff/honne.jpg ></a>
-                                    <a href="https://open.spotify.com/album/1NAmidJlEaVgA3MpcPFYGq?si=w9SBtpFyRR2k3S9KwCL6Jg" target=”_blank”><img class="img-music" src=./assets/funstuff/taylor.jpg ></a>
-                                    <a href="https://open.spotify.com/album/7j7cqgeWmYH9PbKe3S5oJj" target=”_blank”><img class="img-music" src=./assets/funstuff/quinn.png ></a>
-                                    <a href="https://open.spotify.com/album/0HiwsXForePsWdIZW6EEkK?si=xDJeyZXVQOWxChuHc4K0AA" target=”_blank”><img class="img-music" src=./assets/funstuff/lany.png ></a>
-                            </div>
-                        </div>
-                        <div class="row">
-                                <div class="column">
-                                        <a href="https://open.spotify.com/album/34OkZVpuzBa9y40DCy0LPR?si=DL8PShIzS-6-YuYE2EtofQ" target=”_blank”><img class="img-music" src=./assets/funstuff/tay2.png></a>
-                                        <a href="https://open.spotify.com/album/7xV2TzoaVc0ycW7fwBwAml?si=oh_rZMz8SUGTj8VfMiQHBA" target=”_blank”><img class="img-music" src=./assets/funstuff/hs.jpg ></a>
-                                        <a href="https://open.spotify.com/album/5CNckxfLf4TCoMOoxgAU8l?si=FtMxkfAFSlSKHQQoSMZCig" target=”_blank”><img class="img-music" src=./assets/funstuff/rex.png ></a>
-                                        <a href="https://open.spotify.com/album/1xn54DMo2qIqBuMqHtUsFd?si=7FchpsK0QISV2VbyxF3WTw" target=”_blank”><img class="img-music" src=./assets/funstuff/edsheeran.png ></a>
-                                        <a href="https://open.spotify.com/album/5ouTDazE4LF9bVJPx1nlgW?si=KU3u0VFnSsiSM-HOH5z9gg" target=”_blank”><img class="img-music" src=./assets/funstuff/troye.jpg ></a>
-                                </div>
-                            </div>
-                        <p><br></p>
-                </div>
-                <br>
-                <p>Here are some of my favorite photographs that I've taken:</p>
-                    <img id = photos src="./assets/funstuff/gallery/c2.jpg"> -->
-                <br>
-                <br>
-                <br>
-                <br>
-                    
-
-
-            </section>
-            
-
-            <!-- Footer -->
-        <footer class="footer">
-
-                
-                <!-- <div class="footer-copyright text-center py-3">
-                    Last Updated: September 2020. Made with love by Muthu Palaniappan.
-                </div> -->
-
-                <div class="container-fluid">
-                    <p class="footerText">Last Updated: March 2021. Made with &#128153 by Muthu Palaniappan.</p>
-                </div>
-               
-      
-      </footer>
-      <!-- Footer -->
-
-            
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+      <section id="about">
+        <div class="row">
+          <div class="column col-content-left">
+            <p>
+              <b>Hi, I'm Muthu Palaniappan. Nice to meet you!</b>
+              <br>
+              I'm currently a junior at UCLA studying 
+              Computer Science. I'm a developer and designer. 
+              <br>
+              <br>
+              I use technology in every aspect of my life, 
+              from taking lecture notes on my tablet, to ordering iced coffee on the Philz app, 
+              and to checking my blood glucose levels on my phone. 
+              <br>
+              <br>
+              Seeing how big a role technology has played in my life, 
+              my goal is to create products that stimulate productivity and simplify everyday life.    
+            </p>
+            <br>
+            <p class="bold">
+              Here are technologies I work with:
+            </p>
+            <p>
+                <b>Dev:</b> <span class="red-text"> C++, C, Python, Javascript, HTML5, React.js, Dart, Git, Mercurial, 11ty </span>
+            </p>
+            <p>
+                <b>Design:</b> <span class="green-text"> CSS, Figma, Photoshop, Indesign, Balsamiq</span>
+            </p>
+          </div>
+          <div class="column col-head-right">
+            <h1 class='side-title'>about me</h1>
+            <img src='./images/me_dec2.jpg'>
+          </div>
         </div>
+      </section>
 
-    </body>
+      <section id="experience">
+          <div class="row-side">
+            <div class="column col-head-left">
+              <h1 class='side-title-2'>experience</h1>
+              <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Google')" id="defaultOpen">Google</button>
+                <button class="tablinks" onclick="openTab(event, 'UCLA ACM')">UCLA ACM</button>
+                <button class="tablinks" onclick="openTab(event, 'UCLA Learning Assistant')">UCLA Learning Assistant</button>
+                <button class="tablinks" onclick="openTab(event, 'Covalent')">Covalent</button>
+                <button class="tablinks" onclick="openTab(event, 'Girls Who Code')">Girls Who Code</button>
+              </div>
+            </div>
+            <div class="column col-content-right">
+              <p class="bold">
+                  <div id="Google" class="tabcontent">
+                    <h2 class="bold">Google STEP Intern</h2>
+                    <h5><i>June 2021 - September 2021</i></h5>
+                    <br>
+                    <p>Doing things with Google Fuchsia! More to come soon :)</p>
+                  </div>
+                  
+                  <div id="UCLA ACM" class="tabcontent">
+                      <h2 class="bold">ACM Design Vice President</h2>
+                      <h4>Prev: Workshops Director, Developer</h4>
+                      <h5><i>December 2019 - Present</i></h5>
+                      <br>
+                      <p><a href="https://www.uclaacm.com/" target=”_blank”>UCLA ACM</a>, or the Association for Computing Machinery, is the biggest 
+                        Computer Science club at UCLA. ACM Design is in charge of mainting the branding for the club, and we also
+                        teach students principles of design. I have been VP of Design since March 2021.
+                        As the Workshops Director, I organize workshops such as "How to
+                        Design a Resume" and "Creating a Brand through Design". As a Developer, I help maintain the ACM Design
+                        <a href="https://design.uclaacm.com/" target=”_blank”>styleguide website</a>.</p>
+                  </div>
+                  
+                  <div id="UCLA Learning Assistant" class="tabcontent">
+                      <h2 class="bold">UCLA HSSEAS Learning Assistant</h2>
+                      <h5><i>January 2021 - June 2021</i></h5>
+                      <h4>Classes: Computer Science 31, Computer Science 32</h4>
+                      <br>
+                      <p>As a part of <a href="https://ceils.ucla.edu/learningassistants/" target=”_blank”>UCLA's Learning Assistant Program</a>, I was an LA for two
+                        introductory CS classes. I attended weekly content meetings with the class professor,
+                      prepared Learning Assistant content worksheets, hosted office hours to assist students
+                      with homework and projects, and worked with a TA to facilitate weekly discussions
+                      with up to 30 students. I also learned about effective teaching strategies through a 
+                      weekly LA seminar.</p>
+                  </div>
+
+                  <div id="Covalent" class="tabcontent">
+                      <h2 class="bold">Covalent Front-End Developer & Designer</h2>
+                      <h5><i>October 2020 - June 2021</i></h5>
+                      <br>
+                      <p><a href="https://covalent.app/" target=”_blank”>Covalent</a> was a 
+                        <a href="https://ucladevx.com/" target=”_blank”>UCLA DevX</a> project. We focused on creating a better way to bond! With games like 2 truths
+                         and a lie, teams can get to know each other in a virtual setting. As a front-end developer, I worked on various user facing pages
+                         using Next.js. As a designer, I was in charge of Covalent's graphics and marketing materials.
+                         Check us out on <a href="https://twitter.com/covalentapp" target=”_blank”>Twitter</a> and on 
+                         <a href="https://www.instagram.com/covalentapp/" target=”_blank”>Instagram</a> <b>@covalentapp</b>!</p>
+                  </div>
+                  
+                  <div id="Girls Who Code" class="tabcontent">
+                      <h2 class="bold">GWC Summer Immersion Student</h2>
+                      <h5><i>June 2018 - August 2018</i></h5>
+                      <br>
+                      <p>For a summer, I took part in the <a href="https://girlswhocode.com/programs/summer-immersion-program" target=”_blank”>
+                        Girls Who Code Summer Immersion Program</a>.
+                        My program was hosted at Lightspeed Ventures in Palo Alto, CA. I was able to learn about programming
+                        and Robotics, covering topics such as Python and Web Development every week. Along with my classmates, I also 
+                        learned about WiSTEM through visiting companies in the Bay Area and listening to 
+                        women speak about their experiences in tech. </p>
+                  </div>
+              </p>
+            </div>
+          </div>
+      </section>
+
+      <section id="projects">  
+        <h1>projects</h1>
+      </section>
+      
+      
+      <section id="contact">
+        <h1>contact</h1>
+      </section>
+      
+
+      <section id="funstuff">
+          <h1>fun stuff</h1>
+      </section>
+    </div>
+        <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fluid">
+          <p class="footerText">Last Updated: August 2021. Made with &#128153 by Muthu Palaniappan.</p>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+  </div>
+
+  <script>
+    function responsiveNav() {
+      var x = document.getElementById("myNav");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+
+    function openTab(evt, tabName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the link that opened the tab
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    document.getElementById("defaultOpen").click();
+  </script>
+
+</body>
 </html>
