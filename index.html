@@ -145,17 +145,98 @@
       </section>
 
       <section id="projects">  
-        <h1>projects</h1>
+        <div class="row-side">
+          <div class="column col-content-left-tab">
+              <p class="bold">
+                  <div id="nourish" class="tabcontent2">
+                    <h2 class="bold">nourish</h2>
+                    <h5><i>October 2020 - December 2020</i></h5>
+                    <br>
+                    <p>nourish is a group project I worked on in Computer Science 97. nourish is a 
+                        full stack web app built with the <b>MERN stack</b>. The site serves as a "community craigslist" where users can create
+                        accounts and post about extra produce and supplies they are looking to donate to members of their 
+                        community. In a pandemic, it is important to be there for others, and nourish acts as a middle ground
+                        between those in need and those looking to help. Check out the source code and learn 
+                        more <a href="https://github.com/muthu-pal/Nourish-CS97" target=”_blank”>here</a>!</p>
+                  </div>
+                  
+                  <div id="Moodie" class="tabcontent2">
+                      <h2 class="bold">Moodie</h2>
+                      <h5><i>June 2020 - August 2020</i></h5>
+                      <br>
+                      <p>Moodie is a song mood analyzer. Using <b>React.js</b> and the <b>Spotify Developer
+                          API</b>, I created a web application that analyzes a user's top songs according to a certain time period 
+                          (30 days, 6 months, or all time) and sorts the songs based on their mood. The application inspects
+                          values provided by Spotify such as "danceability" or "tempo" and categorizes the song into its 
+                          respective mood. View the source code <a href="https://github.com/muthu-pal/Moodie" target=”_blank”>here</a> 
+                          or try Moodie for yourself <a href="http://moodie-s20.herokuapp.com/" target=”_blank”>here</a>!</p>
+                  </div>
+                  
+                  <div id="Schedule Buddy" class="tabcontent2">
+                      <h2 class="bold">Schedule Buddy</h2>
+                      <h5><i>June 2020 - September 2020</i></h5>
+                      <br>
+                      <p>As a part of Bruin Labs over the summer of 2020, I created Schedule Buddy in a team of four.
+                          Schedule Buddy is a prototype for UCLA students to upload their schedules, view other student's schedules, search class combinations,
+                          and access lists of "Interesting GEs" or "Easy GEs". With the schedules all in one place, students can see recommendations for 
+                          which classes to take during specific quarters. We used <b>React.js</b> to build the app, <b>Firebase</b> to host, and <b>Beautiful Soup</b> to parse
+                          class data for the search functions. View the source code <a href="https://github.com/muthu-pal/schedule-buddy" target=”_blank”>here</a>!</p>
+                  </div>
+  
+                  <div id="Mini Rogue" class="tabcontent2">
+                      <h2 class="bold">Mini Rogue</h2>
+                      <h5><i>May 2020 - June 2020</i></h5>
+                      <br>
+                      <p>Mini Rogue is a game developed with <b>C++</b>. Users can battle monsters and try to find their way through a 2D dungeon
+                          maze while collecting powerups and maintaining their health scores. There are 4 randomly generated levels in each game, 
+                          and monsters and powerups regenerate at every level. View the source 
+                          code <a href="https://github.com/muthu-pal/MiniRogue" target=”_blank”>here</a>!</p>
+                  </div>
+              </p>
+          </div>
+          <div class="column col-head-right">
+            <h1 class='side-title'>projects</h1>
+            <div class="tab2">
+              <button class="tablinks2" onclick="openProj(event, 'nourish')" id="defaultOpen2">nourish</button>
+              <button class="tablinks2" onclick="openProj(event, 'Moodie')">Moodie</button>
+              <button class="tablinks2" onclick="openProj(event, 'Schedule Buddy')">Schedule Buddy</button>
+              <button class="tablinks2" onclick="openProj(event, 'Mini Rogue')">Mini Rogue</button>
+            </div>
+          </div>
+        </div>
       </section>
       
       
       <section id="contact">
-        <h1>contact</h1>
+        <div class="row">
+          <div class="column col-title">
+              <h1 class='side-title-2'>contact</h1>
+          </div>
+          <div class="column col-list-right">
+            <h2><a href="https://www.linkedin.com/in/muthu-p/" target=”_blank”>linkedin</a></h2>
+            <br>
+            <h2><a href="https://github.com/muthu-pal" target=”_blank”>github</a></h2>
+            <br>
+            <h2><a href = mailto:muthupal@g.ucla.edu target=”_blank”>muthupal [@] g.ucla [.] edu</a></h2>
+            <br>
+            <h2><a href="https://twitter.com/muthupal4" target=”_blank”>twitter</a></h2>
+
+          </div>
+        </div>
       </section>
       
 
       <section id="funstuff">
-          <h1>fun stuff</h1>
+        <div class="row">
+            <div class="column col-list-left">
+              <p>In my free time I love to visit coffee shops, listen 
+                to <a href="https://open.spotify.com/user/muthupal01?si=qWoK5-OiTjGB7yShcTP6Fw" target=”_blank”>music</a>, 
+                take <a href="https://www.flickr.com/photos/muthup" target=”_blank”>photographs</a>, and play tennis!</p>
+            </div>
+            <div class="column col-title">
+                <h1 class='side-title-2'>fun stuff</h1>
+            </div>
+          </div>
       </section>
     </div>
         <!-- Footer -->
@@ -199,7 +280,29 @@
       evt.currentTarget.className += " active";
     }
 
+    function openProj(evt, tabName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent2");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks2");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the link that opened the tab
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
     document.getElementById("defaultOpen").click();
+    document.getElementById("defaultOpen2").click();
   </script>
 
 </body>

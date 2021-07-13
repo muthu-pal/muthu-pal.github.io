@@ -33,6 +33,10 @@ body{
     font-family: 'Overpass';
     box-sizing: border-box;
 }
+
+a{
+  color: #3D86DD;
+}
 .container-fluid{
     
     width:100vw;
@@ -168,6 +172,14 @@ section#about {
 
 }
 
+.col-title{
+  padding-left: 4vh;
+  padding-right: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .col-content-left {
   align-items: center;
   text-align: right;
@@ -181,7 +193,10 @@ section#about {
   justify-content: center;
   align-items: left;
   text-align: left;
-  padding-left: 2vw;
+  padding-left: 2.5vw;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .col-head-right img{
@@ -204,6 +219,39 @@ section#about {
   
 }
 
+.col-list-right {
+  align-items: center;
+  text-align: left;
+  display: inline-block;
+  padding-right: 2.5vw;
+  padding-left: 2.5vw;
+  padding-top: 6vh;
+  max-width: 40vh;
+}
+
+.col-list-left {
+  align-items: center;
+  text-align: right;
+  display: flex;
+  padding-right: 2.5vw;
+  padding-left: 2.5vw;
+  padding-top: 6vh;
+  max-width: 40vh;
+}
+
+.col-content-left-tab {
+  align-items: center;
+  text-align: right;
+  display: inline-block;
+  padding-right: 2.5vw;
+  padding-left: 2.5vw;
+  padding-top: 6vh;
+  max-width: 40vh;
+  background-color: rgba(245, 245, 245, 0.719);
+  border-radius: 50px;
+  
+}
+
 .col-head-left{
   justify-content: center;
   align-items: right;
@@ -214,13 +262,21 @@ section#about {
   padding-top: 0;
 }
 
-.tab button:hover {
+.tab button:hover{
+  background-color: rgba(221, 221, 221, 0.698);
+}
+
+.tab2 button:hover{
   background-color: rgba(221, 221, 221, 0.698);
 }
 
 /* Create an active/current "tab button" class */
 .tab button.active {
   color:#FB4B4E;
+}
+
+.tab2 button.active {
+  color:#00BD9D;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -236,10 +292,28 @@ section#about {
   font-size: 2rem;
 }
 
+.tab2 button {
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline-block;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  font-family: 'Overpass Bold';
+  font-size: 2rem;
+}
+
 .tab {
   display: flex;
   flex-direction: column;
   text-align: right;
+}
+
+.tab2 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 
@@ -248,20 +322,36 @@ section#about {
 section#experience {
   height: auto;
   text-align: unset;
+  padding-bottom: 10vh;
 }
 
-/*
 section#projects {
   height: auto;
+  text-align: unset;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 section#contact {
   height: auto;
+  text-align: unset;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
+
 section#funstuff {
   height: auto;
-  
-} */
+  text-align: unset;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+}
+
+.footer{
+  padding-left: 1vw;
+  padding-bottom: 0.25vh;
+  padding-right: 0;
+  overflow: hidden;
+}
 
 @media screen and (max-width: 800px) {
   .column {
