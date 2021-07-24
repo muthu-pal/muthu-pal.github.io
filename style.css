@@ -238,6 +238,7 @@ section#about {
   padding-left: 2.5vw;
   padding-top: 6vh;
   max-width: 40vh;
+  font-size: 0.9rem;
 }
 
 .col-list-left {
@@ -467,7 +468,7 @@ section#funstuff {
     padding-left: unset; 
     padding-top: unset;
     max-width: unset;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
   }
 
   .col-content-left-tab {
@@ -503,7 +504,7 @@ section#funstuff {
   }
   section#funstuff {
     padding-top: 4vh;
-    padding-bottom: 4vh;
+    padding-bottom: 6vh;
   }
 
   .row-side{
