@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(0deg, #FBE9D7 0%, #F6D5F7 100%);
+    height: 100vh;
+    width:100vw;
+    line-height: 1.6;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.container-fluid{
+    
+    width:100vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    
+
+}
+
+.header {
+    margin: 0;
+}
+p{
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face{
+    font-family: 'Overpass';
+    src: url('./assets/fonts/overpass/overpass-regular.otf');
+}
+
+@font-face{
+    font-family: 'Overpass Bold';
+    src: url('./assets/fonts/overpass/overpass-bold.otf');
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+  }
+  
+  
+  .column {
+    flex: 1;
+    padding: 0 .42vh;
+  }
+  
+  .column img {
+    margin-top: .85vh;
+    vertical-align: middle;
+  }
+section h1{
+    font-family: 'Overpass Bold';
+    font-size: 3rem;
+    margin: 0;
+}
+
+section p{
+    font-family: 'Overpass';
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    
+    margin: 0;
+    padding: 1.06vh;
+}
+
+.navbar{
+    font-family: 'Overpass';
+}
+
+/* Section Specific Design */
+section#landing {
+    /* background: url('./assets/funstuff/gallery/hoco2.jpg') no-repeat center center/cover; */
+    background: linear-gradient(0deg, #FBE9D7 0%, #F6D5F7 100%);
+    justify-content: center;
+    align-items: center;
+}
+
+section#about {
+    background: linear-gradient(0deg, #FFFFFF 0%, #FBE9D7 100%);
+    height: auto;
+    
+    
+}
+
+section#experience {
+    background: linear-gradient(0deg, #FFFFFF 0%, #FFFFFF 100%);
+    height: auto;
+}
+
+
+
+section#projects {
+    background: linear-gradient(0deg, #FFFFFF 0%, #FFFFFF 100%);
+    height: auto;
+}
+
+section#contact {
+    background: linear-gradient(0deg, #FBE9D7 0%, #FFFFFF 100%);
+    height: auto;
+}
+section#funstuff {
+    background: linear-gradient(0deg, #F7D6F7 0%, #FBEAD8 100%);
+    height: auto;
+    
+}
+
+
+
+.profilepic{
+    width: 100%;
+    max-width: 28.75vh;
+    height: auto;
+}
+
+
+.skills{
+    display: grid;
+    text-align: center;
+    font-weight: 900;
+}
+.skills h5{
+    font-family: "Overpass Bold";
+}
+/* #skillsRow{
+    display: grid;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+} */
+
+
+.img-skills{
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+}
+
+#expContainer{
+    display: grid;
+    background: transparent;
+    overflow-y: visible;
+
+} 
+.cards{
+    display: grid;
+    background: white;
+    justify-content: center;
+    text-align: left;
+    overflow-y: visible;
+}
+.card {
+    display: grid;
+    background:rgba(246, 213, 247, 0.445);
+    border-radius: 1rem;
+    padding: 2rem;
+    padding-right: 4rem;
+    box-shadow: 4px 4px 12px 2px rgba(black, 0.75);
+    overflow-y: visible;
+    transition: 0.2s;
+    margin-bottom: 1rem;
+    justify-content: left;
+    text-align: left;
+    width: 100%;
+    max-width: 80vw;
+    height: auto;
+    
+} 
+
+
+
+.card:hover{
+    transform: translateY(-0.5rem);
+}
+
+.cards img{
+    width: 100%;
+    max-width: 90px;
+    height: auto;
+    
+}
+
+#photoDiv{
+    text-align: center;
+}
+
+
+.card h3{
+    font-family: 'Overpass Bold';    
+    font-size: 2rem;
+}
+
+.card h5{
+    font-family: 'Overpass Bold';    
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.card p {
+    font-size: 1.2rem;
+    font-style: normal;
+}
+
+.cards-projects{
+    display: grid;
+    background: white;
+    justify-content: center;
+    text-align: left;
+    overflow-y: visible;
+}
+.card-projects{
+    display: grid;
+    background:rgba(246, 213, 247, 0.445);
+    border-radius: 1rem;
+    padding: 2rem;
+    padding-right: 4rem;
+    box-shadow: 4px 4px 12px 2px rgba(black, 0.75);
+    overflow-y: visible;
+    transition: 0.2s;
+    margin-bottom: 1rem;
+    justify-content: left;
+    text-align: left;
+    width: 100%;
+    max-width: 80vw;
+    height: auto;
+    
+} 
+
+.card-projects:hover{
+    transform: translateY(-0.5rem);
+}
+.card-projects h3{
+    font-family: 'Overpass Bold';    
+    font-size: 2rem;
+}
+
+.card-projects h5{
+    font-family: 'Overpass Bold';    
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.card-projects p {
+    font-size: 1.2rem;
+    font-style: normal;
+}
+
+
+.img-contact{
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+}
+
+.img-music{
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+#photos{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+
+}
+
+footer {
+    padding: .32vh;
+    background-color: rgb(51,56,60);
+    color: white;
+    font-family: 'Overpass';
+    height: 3.19vh;
+}
+.author {
+    text-align: left;
+}
+
+  
+
+
+@media screen and (max-width: 780px) { /* tablet */ 
+    *{
+        font-size: 80%;
+    }
+    body{ 
+        overflow-x:hidden;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+    footer {
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .footerText{
+        font-size: 60%;
+    }
+
+    #photos{
+        width: 70%;
+        height: auto;
+    }
+
+    .img-music{
+        width: 15%;
+        height: auto;
+    }
+
+    .img-contact{
+        width: 70%;
+        height: auto;
+    }
+    .skills{
+        text-align: center;
+        justify-content: center;
+        font-weight: 900;
+        
+        
+    }
+}
+
+
+
+
+@media screen and (max-width: 480px) { /* mobile */
+     
+    *{
+        font-size: 80%;
+        
+    }
+    body{ 
+        overflow-x:hidden;
+        margin-right: 0px;
+        padding-right: 0px;
+     }
+
+    section{
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+        height: 20px;
+        
+    }
+
+    .footerText{
+        font-size: 40%;
+    }
+
+    #photos{
+        width: 70%;
+        height: auto;
+    }
+
+    .img-music{
+        width: 15%;
+        height: auto;
+    }
+
+    .img-contact{
+        width: 70%;
+        height: auto;
+    }
+    
+
+}  
+
+
+  
+   

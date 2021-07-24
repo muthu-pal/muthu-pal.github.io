@@ -3,38 +3,6 @@
     padding: 0;
 }
 
-body{
-    background: linear-gradient(0deg, #FBE9D7 0%, #F6D5F7 100%);
-    height: 100vh;
-    width:100vw;
-    line-height: 1.6;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    
-    
-}
-
-.container-fluid{
-    
-    width:100vw;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    
-
-}
-
-.header {
-    margin: 0;
-}
-p{
-    padding: 0px;
-    margin: 0px;
-}
-
 @font-face{
     font-family: 'Overpass';
     src: url('./assets/fonts/overpass/overpass-regular.otf');
@@ -44,38 +12,112 @@ p{
     font-family: 'Overpass Bold';
     src: url('./assets/fonts/overpass/overpass-bold.otf');
 }
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
 
-  }
-  
-  
-  .column {
-    flex: 1;
-    padding: 0 .42vh;
-  }
-  
-  .column img {
-    margin-top: .85vh;
-    vertical-align: middle;
-  }
-section h1{
-    font-family: 'Overpass Bold';
-    font-size: 3rem;
-    margin: 0;
+.bold{
+  font-family: 'Overpass Bold';
 }
 
-section p{
+.green-text{
+  color:#00BD9D;
+}
+
+.red-text{
+  color:#FB4B4E;
+}
+
+body{
+    height: 100vh;
+    width:100vw;
+    line-height: 1.6;
+    overflow: hidden; 
     font-family: 'Overpass';
-    font-size: 1.3rem;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    max-width: 1000px;
-    height: auto;
+    box-sizing: border-box;
 }
+
+a{
+  color: #3D86DD;
+}
+.container-fluid{
+    
+    width:100vw;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #3F3F3F;
+
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .navbar .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-side{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.column {
+  flex: 50%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  max-width: 500px;
+  text-align: center;
+}
+
 
 section{
     display: flex;
@@ -88,311 +130,402 @@ section{
     
     margin: 0;
     padding: 1.06vh;
+    padding-top: 10vh;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-.navbar{
-    font-family: 'Overpass';
+section h1{
+  font-family: 'Overpass Bold';
+  font-size: 3rem;
 }
+
+section p{
+  font-family: 'Overpass';
+  font-size: 1.3rem;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+}
+
 
 /* Section Specific Design */
 section#landing {
-    /* background: url('./assets/funstuff/gallery/hoco2.jpg') no-repeat center center/cover; */
-    background: linear-gradient(0deg, #FBE9D7 0%, #F6D5F7 100%);
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 section#about {
-    background: linear-gradient(0deg, #FFFFFF 0%, #FBE9D7 100%);
-    height: auto;
-    
-    
+  height: auto;
+  padding-bottom: 5vh;
 }
+
+.side-title{
+  font-size: 6.5rem;
+  color: #3D86DD;
+
+}
+
+.side-title-2{
+  font-size: 6rem;
+  color: #3D86DD;
+
+}
+
+.col-title{
+  padding-left: 4vh;
+  padding-right: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-content-left {
+  align-items: center;
+  text-align: right;
+  display: inline-block;
+  padding-left: 5vw;
+  padding-right: 2vw;
+  padding-top: 10vh;
+}
+
+.col-head-right{
+  /* justify-content: center; */
+  align-items: left;
+  text-align: left;
+  padding-left: 2.5vw;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.col-head-right-about{
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  padding-left: 2.5vw;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.col-head-right-about img{
+  border-radius: 30px;
+  width: 100%;
+  max-width: 40vh;
+  height: auto;
+}
+
+.col-content-right {
+  align-items: center;
+  text-align: left;
+  display: inline-block;
+  padding-right: 2.5vw;
+  padding-left: 2.5vw;
+  padding-top: 6vh;
+  max-width: 40vh;
+  background-color: rgba(245, 245, 245, 0.719);
+  border-radius: 50px;
+  
+}
+
+.col-list-right {
+  align-items: center;
+  text-align: left;
+  display: inline-block;
+  padding-right: 2.5vw;
+  padding-left: 2.5vw;
+  padding-top: 6vh;
+  max-width: 40vh;
+}
+
+.col-list-left {
+  align-items: center;
+  text-align: right;
+  display: flex;
+  padding-right: 2.5vw;
+  padding-left: 2.5vw;
+  padding-top: 6vh;
+  max-width: 40vh;
+}
+
+.col-content-left-tab {
+  align-items: center;
+  text-align: right;
+  display: inline-block;
+  padding-right: 2.5vw;
+  padding-left: 2.5vw;
+  padding-top: 6vh;
+  max-width: 40vh;
+  background-color: rgba(245, 245, 245, 0.719);
+  border-radius: 50px;
+  
+}
+
+.col-head-left{
+  justify-content: center;
+  align-items: right;
+  text-align: right;
+  display: inline-block;
+  padding-right: 2.5vw;
+  max-width: auto;
+  padding-top: 0;
+}
+
+.tab button:hover{
+  background-color: rgba(221, 221, 221, 0.698);
+}
+
+.tab2 button:hover{
+  background-color: rgba(221, 221, 221, 0.698);
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  color:#FB4B4E;
+}
+
+.tab2 button.active {
+  color:#00BD9D;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline-block;
+  text-align: right;
+  border: 0;
+  background: transparent;
+  font-family: 'Overpass Bold';
+  font-size: 2rem;
+}
+
+.tab2 button {
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline-block;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  font-family: 'Overpass Bold';
+  font-size: 2rem;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.tab2 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+
+
 
 section#experience {
-    background: linear-gradient(0deg, #FFFFFF 0%, #FFFFFF 100%);
-    height: auto;
+  height: auto;
+  text-align: unset;
+  padding-bottom: 10vh;
 }
 
-
-
 section#projects {
-    background: linear-gradient(0deg, #FFFFFF 0%, #FFFFFF 100%);
-    height: auto;
+  height: auto;
+  text-align: unset;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 section#contact {
-    background: linear-gradient(0deg, #FBE9D7 0%, #FFFFFF 100%);
-    height: auto;
+  height: auto;
+  text-align: unset;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
+
 section#funstuff {
-    background: linear-gradient(0deg, #F7D6F7 0%, #FBEAD8 100%);
-    height: auto;
-    
+  height: auto;
+  text-align: unset;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
 }
 
+.footer{
+  padding-left: 1vw;
+  padding-bottom: 0.25vh;
+  padding-right: 0;
+  overflow: hidden;
+}
 
-
-.profilepic{
+@media screen and (max-width: 800px) {
+  .container-fluid{
     width: 100%;
-    max-width: 28.75vh;
-    height: auto;
-}
+    overflow-x: hidden;
+  }
 
-
-.skills{
-    display: grid;
-    text-align: center;
-    font-weight: 900;
-}
-.skills h5{
-    font-family: "Overpass Bold";
-}
-/* #skillsRow{
-    display: grid;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-} */
-
-
-.img-skills{
+  .column {
     width: 100%;
-    max-width: 60px;
-    height: auto;
-}
-
-#expContainer{
-    display: grid;
-    background: transparent;
-    overflow-y: visible;
-
-} 
-.cards{
-    display: grid;
-    background: white;
+  }
+  .row {
+    flex-direction: column;
+    display: flex;
     justify-content: center;
-    text-align: left;
-    overflow-y: visible;
-}
-.card {
-    display: grid;
-    background:rgba(246, 213, 247, 0.445);
-    border-radius: 1rem;
-    padding: 2rem;
-    padding-right: 4rem;
-    box-shadow: 4px 4px 12px 2px rgba(black, 0.75);
-    overflow-y: visible;
-    transition: 0.2s;
-    margin-bottom: 1rem;
-    justify-content: left;
-    text-align: left;
-    width: 100%;
-    max-width: 80vw;
-    height: auto;
-    
-} 
+    align-items: center;
+  }
 
+  section p {
+    font-size: 1rem;
+  }
 
-
-.card:hover{
-    transform: translateY(-0.5rem);
-}
-
-.cards img{
-    width: 100%;
-    max-width: 90px;
-    height: auto;
-    
-}
-
-#photoDiv{
+  .col-content-left {
+    order: 1;
+    max-width: 90%;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
+    padding-top: 2vh;
     text-align: center;
-}
-
-
-.card h3{
-    font-family: 'Overpass Bold';    
-    font-size: 2rem;
-}
-
-.card h5{
-    font-family: 'Overpass Bold';    
-    font-size: 1.3rem;
-    font-style: italic;
-}
-
-.card p {
-    font-size: 1.2rem;
-    font-style: normal;
-}
-
-.cards-projects{
-    display: grid;
-    background: white;
+    display: flex;
     justify-content: center;
-    text-align: left;
-    overflow-y: visible;
-}
-.card-projects{
-    display: grid;
-    background:rgba(246, 213, 247, 0.445);
-    border-radius: 1rem;
-    padding: 2rem;
-    padding-right: 4rem;
-    box-shadow: 4px 4px 12px 2px rgba(black, 0.75);
-    overflow-y: visible;
-    transition: 0.2s;
-    margin-bottom: 1rem;
-    justify-content: left;
-    text-align: left;
+    flex-direction: column;
+  }
+  .col-head-right{
+    order: 0;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .col-head-right-about{
+    order: 0;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .col-head-left{
+    flex-direction: column;
+    order: 0;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
+
+  .tab {
+    text-align: center;
+  }
+
+  .tab button{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .tab2 {
+    text-align: center;
     width: 100%;
-    max-width: 80vw;
-    height: auto;
-    
-} 
+  }
 
-.card-projects:hover{
-    transform: translateY(-0.5rem);
-}
-.card-projects h3{
-    font-family: 'Overpass Bold';    
-    font-size: 2rem;
-}
+  .tab2 button{
+    text-align: center;
+    font-size: 1.5rem;
+  }
 
-.card-projects h5{
-    font-family: 'Overpass Bold';    
-    font-size: 1.3rem;
-    font-style: italic;
-}
+  .col-content-right{
+    flex-direction: column;
+    order: 1;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    padding-top: 3vh;
+    max-width: 38vh;
+    text-align: center;
+  }
 
-.card-projects p {
-    font-size: 1.2rem;
-    font-style: normal;
-}
+  .col-list-left {
+    order: 1;
+    text-align: center;
+    padding-top: 2vw;
+  }
 
+  .col-list-right {
+    text-align: center; 
+    padding-right: unset; 
+    padding-left: unset; 
+    padding-top: unset;
+    max-width: unset;
+    font-size: 0.9rem;
+  }
 
-.img-contact{
+  .col-content-left-tab {
+    order: 1;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    padding-top: 3vh;
+    max-width: 38vh;
+    text-align: center;
+  }
+
+  .col-title{
+    order: 0;
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+  .side-title{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .side-title-2{
+    font-size: 4rem;
+  }
+
+  section#contact {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+  }
+  section#funstuff {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+  }
+
+  .row-side{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section#projects {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+  }
+  section#experience {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+  }
+
+  .footer{
+    padding-left: 1vw;
+    padding-bottom: 0.25vh;
+    padding-right: 0;
+    overflow: hidden;
     width: 100%;
-    max-width: 60px;
-    height: auto;
+    font-size: 0.6rem ;
+  }
 }
-
-.img-music{
-    width: 100%;
-    max-width: 100px;
-    height: auto;
-}
-
-#photos{
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-
-}
-
-footer {
-    padding: .32vh;
-    background-color: rgb(51,56,60);
-    color: white;
-    font-family: 'Overpass';
-    height: 3.19vh;
-}
-.author {
-    text-align: left;
-}
-
-  
-
-
-@media screen and (max-width: 780px) { /* tablet */ 
-    *{
-        font-size: 80%;
-    }
-    body{ 
-        overflow-x:hidden;
-        margin-right: 0px;
-        padding-right: 0px;
-    }
-    footer {
-        width: 100%;
-        height: auto;
-        
-    }
-
-    .footerText{
-        font-size: 60%;
-    }
-
-    #photos{
-        width: 70%;
-        height: auto;
-    }
-
-    .img-music{
-        width: 15%;
-        height: auto;
-    }
-
-    .img-contact{
-        width: 70%;
-        height: auto;
-    }
-    .skills{
-        text-align: center;
-        justify-content: center;
-        font-weight: 900;
-        
-        
-    }
-}
-
-
-
-
-@media screen and (max-width: 480px) { /* mobile */
-     
-    *{
-        font-size: 80%;
-        
-    }
-    body{ 
-        overflow-x:hidden;
-        margin-right: 0px;
-        padding-right: 0px;
-     }
-
-    section{
-        width: 100%;
-    }
-    footer {
-        width: 100%;
-        height: 20px;
-        
-    }
-
-    .footerText{
-        font-size: 40%;
-    }
-
-    #photos{
-        width: 70%;
-        height: auto;
-    }
-
-    .img-music{
-        width: 15%;
-        height: auto;
-    }
-
-    .img-contact{
-        width: 70%;
-        height: auto;
-    }
-    
-
-}  
-
-
-  
-   
